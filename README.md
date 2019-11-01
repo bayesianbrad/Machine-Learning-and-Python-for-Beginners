@@ -1,4 +1,4 @@
-:earth_africa: :star: #Welcome to the machine learning and python repo for beginners# :star: :earth_africa:
+:earth_africa: :star: # Welcome to the machine learning and python repo for beginners # :star: :earth_africa:
 
 In this repo I will provide all the weekly resources and lecture notes here. 
 
