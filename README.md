@@ -1,11 +1,11 @@
 
-# :star: :earth_africa: Welcome to the Machine Learning and Python repo for beginners :star: :earth_africa: #
+### :star: :earth_africa: Welcome to the Machine Learning and Python repo for beginners :star: :earth_africa: ###
 
 In this repo I will provide all the weekly resources and lecture notes. 
 
 Here is brief outline of what to expect:
 
-## Week 1 ##
+#### Week 1 ####
 
 In week 1 we will cover how to set-up Python for beginners, in particular Python 3+ for Windows (DOS) and Mac/Linux (UNIX) machines. 
 
@@ -18,11 +18,11 @@ I will show you how to set-up a Python environment and how how to install differ
 - [:seedling:] How to get the required libraries for extending the base Python via pip and conda. (5 minutes)
 - [:seedling:] How to get the required libraries via an open-source repo. (15 minutes)
 
-### Bonus material, if time allows ###
+#### Bonus material, if time allows ####
 
 - [:seedling:] Basic Matrix multiplication with NumPy and PyTorch (15 minutes). 
 
-## Week 2 ##
+#### Week 2 ####
 
 In week 2 we will focus on linear and non-linear regression. 
 
@@ -30,7 +30,7 @@ In week 2 we will focus on linear and non-linear regression.
 - [:seedling:] Mathematical introduction to linear and non-linear regression. (30 minutes)
 - [:seedling:] Code up linear and non-linear regression. (45 minutes)
 
-## Week 3 ##
+#### Week 3 ####
 
 In week 3 we will focus on Bayesian statistics - Bayesian stats allows you to quantify uncertainty in your models.
 
@@ -38,7 +38,7 @@ In week 3 we will focus on Bayesian statistics - Bayesian stats allows you to qu
 - [:seedling:] Bayesian regression. (20 minutes)
 - [:seedling:] Code up Bayesian regression example. (35 minutes)
 
-## Week 4 ##
+#### Week 4 ####
 
 In week 4 we will focus on Gaussian Processes.
 
@@ -47,7 +47,7 @@ In week 4 we will focus on Gaussian Processes.
 
 Course will break on here Dec 8th due to work commitments, but will resume from Dec 18th. 
 
-## Week 5 ##
+#### Week 5 ####
 
 In week 5 we will focus on Probabilistic Programming and Machine Learning frameworks.
 
@@ -57,6 +57,6 @@ In week 5 we will focus on Probabilistic Programming and Machine Learning framew
 
 
 
-## Week 6 + TBD ##
+#### Week 6 + TBD ####
 
 
