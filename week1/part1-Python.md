@@ -74,6 +74,7 @@ Close the terminal and reopen the terminal.
 
 ### Installing Miniconda on Windows ##
 
+First download the required Miniconda package from the 
 #### Additional step ####
 
 For Windows machines, to make my teaching life easier, please install the Git for windows, [click here](https://gitforwindows.org/). 
@@ -82,4 +83,39 @@ Click the download button, on the webpage:
 ![](images/git4windows.png)
 
 
-Open a 
+Open the downloaded file and run the installation. Save in default location, i.e whatever it states in the save location.
+Do not check any additional options, other than terms and conditions, unless you know what you are doing. 
+
+Once completed, go the the Windows start menu and type `Anaconda`, open `Anaconda prompt`.
+
+### Set-up Python Environment ###
+
+In this section we are now going to install the relevant libraries, these instructions will be the same for all operating systems,
+provided you are using `the terminal` in Linux/ Mac machines, and `Anaconda prompt` in Windows. 
+
+Within our terminal, or prompt, window we type the following `conda` command to set up a new Python environment. 
+
+```shell
+conda create -n <env_name> python=<python version number>
+```
+where, for example, `<env_name> = python37` and `<python version number> = 3.7`. Environment name can be any string, but labelling it
+`python37` makes it clear for you. `<python version number> ` can be any valid Python version number i.e `2.7`, `3.` etc. 
+
+If we label our env name something else and want to know which Python version it is, we can type the following command:
+```shell
+conda list -n <env_name>
+```
+
+and then check what number it says next to the `python` entry. 
+
+To activate a given environment we type the following command:
+
+```shell
+conda activate <env_name>
+```
+
+You should now see on the terminal/ prompt an appended to the front of the line entry: (<env_name>`), which states that you 
+are now in that given environment. To switch to another environment simply type the same command above and change the `<env_name>`.
+
+
+###  How to get the required libraries ###
