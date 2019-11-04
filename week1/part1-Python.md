@@ -86,7 +86,7 @@ bash Miniconda<press tab key>
 ```
 *Note: The `tab` key is really useful as it will autocomplete, provided there is something in the vicinity of where you are searching, the file name or command.*
 
-Follows the prompts (agree to the T&Cs) and state that you want conda to add something to your `.bashrc` file. 
+Follow the prompts (agree to the T&Cs) and state that you want conda to add something to your `.bashrc` file. 
 
 Close the terminal and reopen another terminal window. 
 
@@ -135,7 +135,7 @@ To activate a given environment we type the following command:
 conda activate <env_name>
 ```
 
-You should now see on the terminal/ prompt an appended to the front of the line entry: (<env_name>`), which states that you 
+You should now see, appended to the front of the line entry, on the terminal/ prompt: (<env_name>`), which states that you 
 are now in that given environment. To switch to another environment simply type the same command above and change the `<env_name>`.
 
 
@@ -199,6 +199,3 @@ and then go to the location where it has been downloaded and run:
 pip install -r requirements.txt
 ```
 and all the packages will be installed. 
-
-
-`
