@@ -8,7 +8,7 @@ Python was conceived in the late 1980s by [Guido van Rossum](https://en.wikipedi
 
 Its popularity in recent years has [skyrocketed](https://stackoverflow.blog/2017/09/06/incredible-growth-python/), due to its ease of use, growing number of libraries and readability. Disclaimer: Python is not the only language out there, in fact there are hundreds, if not thousands, each designed, and optimized, with a particular utility in mind; Pythons is readability and flexibility. Python is one of the easiest languages to pick up and use, but it may not be the best language for the task that you wish to conduct - it is important to keep this in the back of your mind.
 
-Python belongs to a family of languages called *Object orientated languages*, that is languages organised around objects, rather than "actions" and data rather than logic.
+Python belongs to a family of languages called *Object Orientated languages*, that is languages organised around objects, rather than "actions" and logic. This is an over simplified reduction, but if you would like more information about the most popular programming languages paradigms, [click here](http://www.eecs.ucf.edu/~leavens/ComS541Fall97/hw-pages/paradigms/major.html) 
 
 The following image is useful for understanding what an OOP is:
 
@@ -37,9 +37,9 @@ Download the `Python 3.<a_number>` `64-bit` Mac, or Linux, or Windows file. It d
 ### Installing Miniconda on Mac/ Linux ##
 
 Linux users can put their feet up for a few seconds, as we need an additional package manager for MAC OS based systems, called `Brew`, 
-this will make our lives much easier, if you use a Mac. 
+this will make our lives much easier later on, if you use a Mac. 
 
-### Additional step ###
+#### Additional step for Mac ####
 Open up the terminal (on MAC press `cmd` + `space` and then type `terminal` and hit `enter`.)
 
 Within the terminal window type:
@@ -51,42 +51,63 @@ and then hit `enter`.
 see image below:
 ![](images/brewinstall.png)
 
-Brew will then proceed to install. We will use this later on. 
+Brew will then proceed to install.
 
+Then we want to install `git`, which is a piece of software used for version control, we will talk more about this later on. 
+
+Type the following in the terminal:
+
+```shell
+brew install git
+```
+and wait for the procedure to complete. 
+
+#### Additional step for Linux ####
+
+To install `git` on a Linux machine, specifically for `Ubuntu`, we type the following commands, after each command hit enter:
+ ```shell
+ sudo apt-get update
+ sudo apt-get install git
+```
+and wait for the procedure to complete. 
 
 ### Installing Miniconda ###
 
-Still inside the terminal go to the downloaded location of the miniconda file. 
-
-First locate where the file has been downloaded and in the terminal type:
+Still inside the terminal locate where the `miniconda` file has been downloaded to, from the steps above, and in the terminal type:
 
 ```shell 
 cd <location of file>
 ```
+where `<location of file>` is a PATH string, for example `<location of file> = /Users/bradley/Downloads/Miniconda4082892.sh`
+
 Then type
 ```shell
 bash Miniconda<press tab key>
 ```
+*Note: The `tab` key is really useful as it will autocomplete, provided there is something in the vicinity of where you are searching, the file name or command.*
 
 Follows the prompts (agree to the T&Cs) and state that you want conda to add something to your `.bashrc` file. 
 
-Close the terminal and reopen the terminal. 
+Close the terminal and reopen another terminal window. 
 
 ### Installing Miniconda on Windows ##
 
-First download the required Miniconda package from the 
+To install Miniconda on Windows, we locate the downloaded file, from the step above and run the installation. 
+When the Miniconda installation prompts you for a save location, keep it as the default location, i.e whatever it states in the save location, unless you know what you are doing. 
+Do not check any additional options, other than terms and conditions, unless you know what you are doing.
+
+Once completed, go the the Windows start menu and type Anaconda, open Anaconda prompt.
+
 #### Additional step ####
 
-For Windows machines, to make my teaching life easier, please install the Git for windows, [click here](https://gitforwindows.org/). 
+For Windows machines, please install Git for windows, [click here](https://gitforwindows.org/). 
 
-Click the download button, on the webpage:
+Click the download button on the webpage:
 ![](images/git4windows.png)
 
+Open the downloaded file and run the installation. Save in the default location, i.e whatever it states is the save location.
 
-Open the downloaded file and run the installation. Save in default location, i.e whatever it states in the save location.
-Do not check any additional options, other than terms and conditions, unless you know what you are doing. 
-
-Once completed, go the the Windows start menu and type `Anaconda`, open `Anaconda prompt`.
+`git` will then be installed on your machine. 
 
 ### Set-up Python Environment ###
 
@@ -119,3 +140,65 @@ are now in that given environment. To switch to another environment simply type 
 
 
 ###  How to get the required libraries ###
+If our library is a standard `Python` library then it will be hosted on `pip` or `conda`.
+
+**NOTE:** Before searching for the package, we first want to make sure that we are in the right `environment`. 
+That is, if you want to install this package in the `python37` environment that we created above, ensure that you have activated it and are in that environment with `conda activate python37`. 
+Then copy the `pip` or `conda` install instruction and hit `enter`. See below. 
+
+
+Given a library, the easiest way to find the required `pip` or `conda` name for the library is to go to your favourite search engine
+and search either:
+```
+conda install <package name>
+```
+
+![](images/condasearch.png)
+![](images/condainstall.png)
+
+click the link that reference that takes you to the `anaconda.org` page. Copy the given `conda install` command
+and paste that into your Anaconda prompt (Windows), or
+terminal (Mac/Linux). 
+
+Or for `pip`. 
+```
+pip install <package name>
+```
+click the first `pypi` link you see, then copy the `pip install` command and paste that into your Anaconda prompt (Windows), or
+terminal (Mac/Linux). 
+![](images/pipsearch.png)
+![](images/pipinstall.png)
+
+
+#### An example: Installing PyTorch CPU ####
+
+PyTorch is a very useful library for deploying more sophisticated Machine Learning algorithms, we will use it in the future. However, 
+as the installation instructions vary across machines, I will walk through how to install it on Linux, Mac and Windows.
+
+###### On Windows and Linux ######
+
+Type the following command into your terminal window:
+
+```shell
+conda install pytorch torchvision cpuonly -c pytorch
+```
+then hit `enter` and type `y`
+###### On Mac ######
+
+```shell
+conda install pytorch torchvision -c pytorch
+```
+
+##### Installing the rest of the required packages ####
+For ease, I've provided a list of commands to install all the required libraries for the first few weeks in the `requirements.txt` file.
+
+
+Simply download the file from the Github repo [click here]()
+and then go to the location where it has been downloaded and run:
+```shell
+pip install -r requirements.txt
+```
+and all the packages will be installed. 
+
+
+`

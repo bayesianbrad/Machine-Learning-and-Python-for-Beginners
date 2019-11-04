@@ -1,0 +1,1 @@
+pip install numpy matplotlib seaborn jupyter scikit-learn pandas
