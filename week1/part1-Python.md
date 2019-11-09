@@ -218,6 +218,35 @@ pip install -r requirements.txt
 ```
 and all the packages will be installed. 
 
+
+## Running some Python code ##
+
+In your prompt/terminal ensure that you are in the correct `conda` environment and move to somewhere where you are happy to store the work for this course. 
+I.e `~/Documents/notes/` as an example. 
+Move to that location using the command `cd`, as you have done previously and then type the following:
+
+```shell 
+git clone https://github.com/bayesianbrad/Machine-Learning-and-Python-for-Beginners.git
+```
+
+This will then create an exact copy of the repo for this course. 
+Next, move to the repo directory with the following command and hit `enter`:
+```shell
+cd Machine-Learning-and<hit the tab key>
+```
+Once in the repo type the following command and hit `enter`:
+```shell
+jupyter notebook
+```
+
+This will then open a new web page automatically. 
+Once in that webpage you can click to move between directories. Click on the `week1` folder and open
+the `lesson1.ipynb` file. 
+
+A new `jupyter notebook` (also called `notebook`) will open, which will allow you to run `python` code and write text. 
+
+See the `lesson1` notebook for more details. 
+   
 ## Installing a Python library from Github ##
 
 This process is not always generic, but it should be similar for each Python install from `github`. We are now going to leverage `git`. 
