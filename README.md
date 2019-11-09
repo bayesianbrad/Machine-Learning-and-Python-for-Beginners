@@ -1,9 +1,10 @@
 
 ### :star: :earth_africa: Welcome to the Machine Learning and Python repo for beginners :star: :earth_africa: ###
 
-In this repo I will provide all the weekly resources and lecture notes. 
+In this repo I will provide all the weekly resources and lecture notes for the course that will take place in the
+Warrington Room at Harris Manchester College, Thursday 15:00-16;30 for 6 weeks. Excluding the week Dec 8th-15th. 
 
-Here is brief outline of what to expect:
+Here's a brief outline of what to expect:
 
 #### Week 1 ####
 

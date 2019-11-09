@@ -25,6 +25,23 @@ We can also *inherit* or create base objects for other objects to inherit from. 
 
 To make our lives easier, we are going to install Python using package management software, which will simplify your lives drastically. In particular we are going to leverage something called [Anaconda](https://www.anaconda.com/). 
 
+### Using the Command Line ###
+
+Linux / Mac based machines use UNIX for the command line - this is what you use in the terminal. This is different to MS-DOS used by Windows based devices. 
+You interact with DOS when you use CMD Prompt or similar utilities.
+
+To navigate the terminal, or prompt I've provided a table below with limited set of very heavily used commands. 
+
+| Linux/Mac Command  | Windows command | Description                                                                                                                                                                                                                                                                                                                       |
+|--------------------|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ls                 | dir             | Prints the contents of the given directory.                                                                                                                                                                                                                                                                                       |
+| cd `<add path>`    | cd `<add path>` | Changes to the location specified by the string in  `<add path>`. I.e `<add path> = ~/Downloads/`  so you would type ` cd ~/Downloads ` to go to the downloads folder. `cd ~` will take you to the  `home`  directory, that is where your documents, downloads, photos, etc folders are. `cd ..` will move you up one directory.   |
+| mkdir `<add name>` | md `<add name>` | Makes a directory relative to the directory in which  it is called. I.e `<add name> = 'project`.   The `mkdir project` creates a new folder called `project` in the current dir.                                                                                                                                                      |
+| pwd                | pwd             |  Prints out the path for the current directory that you are in.                                                                                                                                                                                                                                                                   |
+
+There are many other well used commands, but I do not want to overwhelm you. If you'd like to find out more
+[click here](http://www.informit.com/blogs/blog.aspx?uk=The-10-Most-Important-Linux-Commands) for UNIX systems and [click here](https://www.digitalcitizen.life/command-prompt-how-use-basic-commands) for DOS systems. 
+
 ### Installing miniconda, a light weight version of Anaconda. ###
 
 First [click here](https://docs.conda.io/en/latest/miniconda.html) to go to the download page for miniconda, you will see the following page:
@@ -193,9 +210,63 @@ conda install pytorch torchvision -c pytorch
 For ease, I've provided a list of commands to install all the required libraries for the first few weeks in the `requirements.txt` file.
 
 
-Simply download the file from the Github repo [click here]()
-and then go to the location where it has been downloaded and run:
+Simply download the file from the Github repo [click here](https://github.com/bayesianbrad/Machine-Learning-and-Python-for-Beginners/blob/master/week1/requirements.txt)
+and then go to the location where it has been downloaded via the terminal, or Anaconda prompt. 
+Ensure that you are in the right environment and run:
 ```shell
 pip install -r requirements.txt
 ```
 and all the packages will be installed. 
+
+## Installing a Python library from Github ##
+
+This process is not always generic, but it should be similar for each Python install from `github`. We are now going to leverage `git`. 
+
+Let's say we find a library that we need to use online, for example `pyro` [click here](https://github.com/pyro-ppl/pyro). 
+We need to make sure that there is a `setup.py` file contained within the repo. 
+
+For the `pyro` library there is one, wahooo :star:!
+
+Within the terminal, we move to a location where we are happy to copy the library too. For example `cd ~/projects/` ,or we make a new dir.
+
+Next we clone the `github` repo in the location.
+
+On the `github` repository page we press the green `Clone or download` button (see picture).
+
+![](images/clonerepo.png)
+
+For convienice, we can talk about using SSH offline, you want to make sure when the box that appears opens that it says **Clone with HTTPS**. 
+Press the paste button at the end of the string that ends with `.git`:
+![](images/pastebutton.png)
+
+Go back to the terminal and type (to paste the repo use right click the mouse, or use `cmd + v` for Mac, `shift+ctrl+v` for Linux, `ctrl + v` for Windows. ):
+
+```shell
+git clone https://github.com/pyro-ppl/pyro.git
+```
+
+
+![](images/cloneterm.png)
+
+Wait for the repo to be copied, *cloned*, from github and then type:
+`cd pyr<press tab>`
+then hit `enter`
+
+type `pwd` and hit `enter` to ensure you are in the given directory of the library, it should read `<something>/pyro`. 
+
+
+Once in the `pyro` directory, esnure that the right conda environment is activated and then type the following commands, hitting enter after each command:
+```shell
+git checkout master
+pip install .
+```
+
+This will then triggered the `setup.py` file, which will then install the given library to your conda environment. 
+
+You can now move to a completely different folder and use that library, you do not have to remain in the folder.
+
+**Important Note:** When installing libraries in this way you should not necessarily install the `master` branch, you typically want to install
+the latest stable version. To find that, you would typically have to look through the github page of that library. 
+
+
+
