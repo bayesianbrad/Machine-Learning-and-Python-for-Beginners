@@ -27,17 +27,26 @@ I will show you how to set-up a Python environment and how how to install differ
 
 In week 2 we will focus on linear and non-linear regression. 
 
-- [:seedling:] Informal introduction to linear & logistic regression. (15 minutes)
-- [:seedling:] Mathematical introduction to linear & logistic regression. (30 minutes)
-- [:seedling:] Code up linear and logistic regression. (45 minutes)
+- [:seedling:] Informal introduction to linear. (15 minutes)
+- [:seedling:] Mathematical introduction to linear regression. (30 minutes)
+- [:seedling:] Code up linear regression. (45 minutes)
 
 #### Bonus material, if time allows ###
 
 - [:seedling:] Introduction to non-linear regression. (35 minutes)
 
+
 #### Week 3 ####
 
-In week 3 we will focus on Bayesian statistics - Bayesian stats allows you to quantify uncertainty in your models.
+In week 3 we will focus on logistic regression. 
+
+- [:seedling:] Informal introduction to linear. (15 minutes)
+- [:seedling:] Mathematical introduction to linear regression. (30 minutes)
+- [:seedling:] Code up linear regression. (45 minutes)
+
+#### Week 4 ####
+
+In week 4 we will focus on Bayesian statistics - Bayesian stats allows you to quantify uncertainty in your models.
 
 - [:seedling:] Introduction to Bayesian statistics and why it is important. We will also discuss Simpsons paradox. (35 minutes)
 - [:seedling:] Bayesian linear regression. (15 minutes)
