@@ -46,7 +46,16 @@ In week 3 we will focus on logistic regression.
 
 #### Week 4 ####
 
-In week 4 we will focus on Bayesian statistics - Bayesian stats allows you to quantify uncertainty in your models.
+In week 4 we will focus on Gaussian Processes.
+
+- [:seedling:] Introduction to Gaussian Processes (GPs) and why they are important. (45 minutes)
+- [:seedling:] Code up, manually, simple GP with squared exponential kernel. (45 minutes)
+
+Course will break on here Dec 8th due to work commitments, but will resume from Dec 18th. 
+
+#### Week 5 ####
+
+In week 5 we will focus on Bayesian statistics - Bayesian stats allows you to quantify uncertainty in your models.
 
 - [:seedling:] Introduction to Bayesian statistics and why it is important. We will also discuss Simpsons paradox. (35 minutes)
 - [:seedling:] Bayesian linear regression. (15 minutes)
@@ -56,16 +65,8 @@ In week 4 we will focus on Bayesian statistics - Bayesian stats allows you to qu
 
 - [:seedling:] Informal introduction to inference algorithms (15 minutes)
 
-#### Week 4 ####
 
-In week 4 we will focus on Gaussian Processes.
-
-- [:seedling:] Introduction to Gaussian Processes (GPs) and why they are important. (45 minutes)
-- [:seedling:] Code up, manually, simple GP with squared exponential kernel. (45 minutes)
-
-Course will break on here Dec 8th due to work commitments, but will resume from Dec 18th. 
-
-#### Week 5 ####
+#### Week 6 ####
 
 In week 5 we will focus on Probabilistic Programming and Machine Learning frameworks.
 
