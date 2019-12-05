@@ -13,6 +13,6 @@ The next tutorial is how to utilise an existing framework called Scikit-Learn.
 Scikit-learn is a fantastic library, full of all the most useful unsupervised (clustering methods) supervised (Random forests, GPs, Linear regression etc) learning methods, and enables users to easily utilise them 
 by making simple function calls. 
 Follow this tutorial and run it in a jupyter notebook, you have already installed Scikit-learn :
-[Scikit-learn GP tutorial](https://scikit-learn.org/stable/auto_examples/gaussian_process/plot_gpr_noisy_targets.html)
+[Scikit-learn GP tutorial](https://scikit-learn.org/stable/auto_examples/gaussian_process/plot_gpr_noisy_targets.html) and [Here}(https://scikit-learn.org/stable/auto_examples/gaussian_process/plot_gpr_prior_posterior.html#sphx-glr-auto-examples-gaussian-process-plot-gpr-prior-posterior-py)
 
 For the hard core maths of GPs and a nice introductory overview of some of the more complicated aspects of GPs, [click here](https://mlss2011.comp.nus.edu.sg/uploads/Site/lect1gp.pdf) 
